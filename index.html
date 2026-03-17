@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yogesh-developer portfolio </title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <script src="script.js"></script>
+    <header>
+        <nav id="home">
+            <div class="left"><a href="">Web Developer</a></div>
+            <div class="right">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contactus">Contact us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My name is <span class="yellow">Yogesh</span>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <a class="btn" href="#project">Projects</a>
+                    <a class="btn"
+                        href="https://www.linkedin.com/in/yogesh-g-895147356?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a>
+                </div>
+            </div>
+
+            <div class="rightsection">
+                <img src="img/file_00000000faec720bacdac570177e1872.png " width=160% alt="">
+            </div>
+        </section>
+        <hr>
+    </main>
+    <h2 class="h2">Projects </h1>
+    </h2>
+
+    <main>
+
+        <div id="project" class="projects">
+            <div class="leftproject">
+                <img src="img/ChatGPT Image Mar 14, 2026, 05_25_11 PM.png" width="342px" alt="">
+                <div class="project2text">
+                    <h1>Trendify</h1>
+                    <br>
+                    <h5>Trendify is a modern platform designed to showcase the latest trends in fashion,lifestyle,and
+                        digital culture.it helps users discover what's popular,stay inspired, and explore trending
+                        content
+                        in
+                        a simple and visually engaging way.</h5>
+                    <br>
+                    <a href="">
+                        View Project
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+            <div class="rightproject">
+                <img src="img/durga eletro hub.png" width="342px" alt="">
+                <div class="project3text">
+                    <h1>Durgaelectrohub</h1>
+                    <br>
+                    <h5>DurgaElectroHub is a trusted electronics store
+                        offering a variety of modern gadgets, devices, and
+                        accessories. We aim to bring the latest technology
+                        to customers with quality products, fair prices, and
+                        a user-friendly shopping experience.</h5>
+                    <br>
+                    <a href="">
+                        View Project
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <hr class="hr2">
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Front-end Developer', 'Back-end Developer', 'Python Developer'],
+            typeSpeed: 50,
+        });
+    </script>
+    <footer id="about">
+        <div class="text">
+            <div>
+                <h2>About Me.</h2>
+            </div>
+            <br>
+            <h4>I am Yogesh Goswami, a BCA graduate and a <br> passionate Python Full Stack
+                Web Developer.<br>I have Experience Working with HTML,CSS,JavaScript <br>
+                React,Python and Django,along with database like My sql and <br> MongoDB.
+                I enjoy building responsive,user-friendly Web <br> application and continuosly
+                learning new technologies <br> to improve my development skills.
+            </h4>
+            <a href="">Resume</a>
+        </div>
+        <div>
+            <img src="img/file_0000000005ec720892bf4273e2f12eb4 (1).png" width="360pxpx" alt="">
+        </div>
+    </footer>
+    <footer class="footers">
+        <div id="contactus" class="footer">
+            <div class="footertext">
+                <h2 class="main">Yogesh<h2><span id="element1"></span></h2>
+                </h2>
+
+                <h6>I am a passionate Web Developer with skills in HTML, Bootstrap, and JavaScript frameworks like
+                    React.js.
+                    I also work with backend technologies such as Python and Django to build dynamic web applications. I
+                    have experience with databases including MySQL and MongoDB. My goal is to develop efficient,
+                    scalable,
+                    and user-friendly web solutions.
+                </h6>
+                <div class="icons"><a href=""><img src="img/623dd7d270712bdafc63c38a.png" alt=""></a>
+                    <a class="twitter" href=""><img src="img/twitter_3669691.png" alt=""></a>
+                    <a href=""><img src="img/github_5968896.png" alt=""></a>
+                    <a href=""><img
+                            src="img/vecteezy_linkedin-logo-png-linkedin-logo-transparent-png-linkedin_23986980.png"
+                            alt=""></a>
+                </div>
+            </div>
+            <div class="footerbtn">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Project</a></li>
+                </ul>
+            </div>
+            <footer>
+                <div class="copyrighttext">
+                    <hr>
+                    <h5>© 2026 Yogesh Goswami | Full Stack Web Developer
+                        Building modern, fast and responsive websites.<h5>
+                </div>
+            </footer>
+        </div>
+        <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+        <script>
+            const words = ['Web Developer', 'Front-end Developer', 'Back-end Developer', 'Python-Developer'];
+            let index = 0;
+
+            const wordElement = document.getElementById("element1");
+
+            function changeWord() {
+                wordElement.textContent = words[index];
+                index = (index + 1) % words.length;
+            }
+            changeWord();
+            setInterval(changeWord, 2000);
+        </script>
+    </footer>
+
+</body>
+
+</html>
